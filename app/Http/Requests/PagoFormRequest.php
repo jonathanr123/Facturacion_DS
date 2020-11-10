@@ -1,0 +1,30 @@
+<?php
+
+namespace sisFactura\Http\Requests;
+
+use sisFactura\Http\Requests\Request;
+
+class PagoFormRequest extends Request
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            //
+        ];
+    }
+}
